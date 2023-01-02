@@ -1,24 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useRef } from "react";
+import OpenPage from "./Components/OpenPage";
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Styles/App.scss";
+import AboutMe from "./Components/AboutMe";
 
 function App() {
+  const OpenCon = useRef(null);
+  const AboutCon = useRef(null);
+  const OpenClick = () => {
+    OpenCon.current.scrollIntoView();
+  };
+  const AboutClick = () => {
+    AboutCon.current.scrollIntoView();
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar
+        className="HeaderCon"
+        collapseOnSelect
+        expand="lg"
+        bg="dark"
+        variant="dark"
+      >
+        <Container>
+          <Navbar.Brand>Asadbek Alimov</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link onClick={OpenClick}>Home</Nav.Link>
+              <Nav.Link onClick={AboutClick}>About</Nav.Link>
+            </Nav>
+            <Nav></Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+
+      <div ref={OpenCon}>
+        <OpenPage />
+      </div>
+      <div ref={AboutCon}>
+        <AboutMe />
+      </div>
+    </>
   );
 }
 
