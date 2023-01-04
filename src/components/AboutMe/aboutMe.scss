@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=JetBrains+Mono:wght@500&family=Poppins:wght@300;500&display=swap");
+
+$textBlue: rgb(0, 119, 255);
+$shadowBlue: rgba(0, 119, 255, 0.534);
+.aboutMeCon {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  .textMe {
+    width: 550px;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.096);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid $textBlue;
+    box-shadow: 2px 2px 10px $shadowBlue, -2px -2px 10px $shadowBlue;
+    h2 {
+      color: rgb(0, 119, 255);
+      font-size: 40px;
+      font-family: "Poppins", sans-serif;
+    }
+    p {
+      color: rgb(1, 0, 51);
+      font-size: 20px;
+      text-align: center;
+      font-family: "Anek Devanagari", sans-serif;
+    }
+  }
+  .myPhoto {
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 400px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px $shadowBlue, -2px -2px 10px $shadowBlue;
+      border: 2px solid $textBlue;
+      margin-bottom: 20px;
+    }
+  }
+}

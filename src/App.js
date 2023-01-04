@@ -1,49 +1,35 @@
-import React, { useRef } from "react";
-import OpenPage from "./Components/OpenPage";
-import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import React from "react";
+import { Nav, Navbar , Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Styles/App.scss";
-import AboutMe from "./Components/AboutMe";
+import Who from "./components/WhoIsMe/Who";
+import './app.scss'
+import Me from "./components/AboutMe/Me";
+import MySkills from "./components/Skills/MySkills";
+import Project from "./components/PhysicalComputing/Project";
+import Exp from "./components/Experience/Exp.js";
 
-function App() {
-  const OpenCon = useRef(null);
-  const AboutCon = useRef(null);
-  const OpenClick = () => {
-    OpenCon.current.scrollIntoView();
-  };
-  const AboutClick = () => {
-    AboutCon.current.scrollIntoView();
-  };
+function app() {
   return (
     <>
-      <Navbar
-        className="HeaderCon"
-        collapseOnSelect
-        expand="lg"
-        bg="dark"
-        variant="dark"
-      >
+      <div className="navCon">
+      <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand>Asadbek Alimov</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link onClick={OpenClick}>Home</Nav.Link>
-              <Nav.Link onClick={AboutClick}>About</Nav.Link>
-            </Nav>
-            <Nav></Nav>
-          </Navbar.Collapse>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
         </Container>
       </Navbar>
-
-      <div ref={OpenCon}>
-        <OpenPage />
       </div>
-      <div ref={AboutCon}>
-        <AboutMe />
-      </div>
+      <div><Who/></div>
+      <div><Me/></div>
+      <div><MySkills/></div>
+      <div><Project/></div>
+      <div><Exp/></div>
     </>
   );
 }
 
-export default App;
+export default app;
