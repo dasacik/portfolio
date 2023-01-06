@@ -1,12 +1,13 @@
 import React from "react";
 import { Nav, Navbar , Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Who from "./components/WhoIsMe/Who";
+import Who from "./Components/WhoIsMe/Who";
 import './app.scss'
-import Me from "./components/AboutMe/Me";
-import MySkills from "./components/Skills/MySkills";
-import Project from "./components/PhysicalComputing/Project";
-import Exp from "./components/Experience/Exp.js";
+import Me from "./Components/AboutMe/Me";
+import MySkills from "./Components/Skills/MySkills";
+import Project from "./Components/PhysicalComputing/Project";
+import Exp from "./Components/Experience/Exp.js";
+import Lang from "./Components/Languages/Lang.js";
 
 function app() {
   return (
@@ -28,6 +29,7 @@ function app() {
       <div><MySkills/></div>
       <div><Project/></div>
       <div><Exp/></div>
+      <div><Lang/></div>
     </>
   );
 }
