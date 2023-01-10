@@ -10,10 +10,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    h2{
+    h2 {
       color: rgb(0, 119, 255);
       font-size: 40px;
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
     }
   }
   .skillsCon {
@@ -35,8 +35,13 @@
       p {
         font-size: 32px;
         text-align: center;
-        font-family: 'Anek Devanagari', sans-serif;
+        font-family: "Anek Devanagari", sans-serif;
         font-weight: 600;
+        transition: 0.5s;
+        color: rgb(1, 0, 34);
+      }
+      p:hover {
+        color: rgb(4, 2, 124);
       }
     }
     .cycle2 {
@@ -53,8 +58,13 @@
       p {
         font-size: 50px;
         text-align: center;
-        font-family: 'Anek Devanagari', sans-serif;
+        font-family: "Anek Devanagari", sans-serif;
         font-weight: 600;
+        transition: 0.5s;
+        color: rgb(1, 0, 34);
+      }
+      p:hover {
+        color: rgb(4, 2, 124);
       }
     }
     .cycle3 {
@@ -69,8 +79,13 @@
       p {
         font-size: 35px;
         text-align: center;
-        font-family: 'Anek Devanagari', sans-serif;
+        font-family: "Anek Devanagari", sans-serif;
         font-weight: 600;
+        color: rgb(1, 0, 34);
+        transition: 0.5s;
+      }
+      p:hover {
+        color: rgb(4, 2, 124);
       }
     }
     .cycle4 {
@@ -86,8 +101,13 @@
       p {
         font-size: 20px;
         text-align: center;
-        font-family: 'Anek Devanagari', sans-serif;
+        font-family: "Anek Devanagari", sans-serif;
         font-weight: 600;
+        color: rgb(1, 0, 34);
+        transition: 0.5s;
+      }
+      p:hover {
+        color: rgb(4, 2, 124);
       }
     }
   }

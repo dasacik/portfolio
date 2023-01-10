@@ -26,12 +26,16 @@ $shadowBlue: rgba(0, 119, 255, 0.534);
       font-size: 40px;
       font-family: "Poppins", sans-serif;
     }
-    p {
+      font-family: "Anek Devanagari", sans-serif;
+      transition: 0.5s;
+    }
+    p:hover{
+      color: rgb(4, 2, 124);
+    }  p {
       color: rgb(1, 0, 51);
       font-size: 20px;
       text-align: center;
-      font-family: "Anek Devanagari", sans-serif;
-    }
+  
   }
   .myPhoto {
     width: 550px;

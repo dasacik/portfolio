@@ -35,10 +35,14 @@ $shadowBlue: rgba(0, 119, 255, 0.534);
       align-items: center;
       border: 2px solid $textBlue;
       box-shadow: 2px 2px 10px $shadowBlue, -2px -2px 10px $shadowBlue;
+      transition: 0.2s;
       .photo1 {
         width: 100%;
         border-radius: 10px;
       }
+    }
+    .photoCon:hover{
+      box-shadow: 5px 5px 15px $shadowBlue, -5px -5px 15px $shadowBlue;
     }
     .textCon {
       margin: 5vh 1vh;
@@ -54,6 +58,7 @@ $shadowBlue: rgba(0, 119, 255, 0.534);
       border-radius: 10px;
       border: 1px solid $textBlue;
       box-shadow: 2px 2px 10px $shadowBlue, -2px -2px 10px $shadowBlue;
+      transition: 0.2s;
       h2 {
         color: rgb(0, 119, 255);
         font-size: 40px;
@@ -64,6 +69,9 @@ $shadowBlue: rgba(0, 119, 255, 0.534);
         font-size: 22px;
         font-family: "Anek Devanagari", sans-serif;
       }
+    }
+    .textCon:hover{
+      box-shadow: 5px 5px 15px $shadowBlue, -5px -5px 15px $shadowBlue;
     }
   }
 }

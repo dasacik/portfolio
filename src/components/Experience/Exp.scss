@@ -53,6 +53,10 @@ $bgGray: rgba(0, 0, 0, 0.096);
         padding: 0 2vw;
         text-align: center;
         margin-top: 3vh;
+        transition: 0.5s;
+      }
+      p:hover{
+        color: rgb(4, 2, 124);
       }
   }
 }

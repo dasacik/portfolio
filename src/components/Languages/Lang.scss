@@ -39,6 +39,7 @@ $textDarkBlue: rgb(1, 0, 51);
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    transition: 0.1s;
     div {
       width: 100%;
       height: 40%;
@@ -64,6 +65,9 @@ $textDarkBlue: rgb(1, 0, 51);
       text-align: center;
       font-family: "Anek Devanagari", sans-serif;
     }
+  }
+  .rusCon:hover {
+    box-shadow: 10px 10px 20px $shadowBlue, -10px -10px 20px $shadowBlue;
   }
   .engCon {
     width: $cardW;
@@ -78,6 +82,7 @@ $textDarkBlue: rgb(1, 0, 51);
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    transition: 0.1s;
     div {
       width: 100%;
       height: 40%;
@@ -104,6 +109,9 @@ $textDarkBlue: rgb(1, 0, 51);
       font-family: "Anek Devanagari", sans-serif;
     }
   }
+  .engCon:hover {
+    box-shadow: 10px 10px 20px $shadowBlue, -10px -10px 20px $shadowBlue;
+  }
   .uzbCon {
     width: $cardW;
     height: $cardH;
@@ -117,6 +125,7 @@ $textDarkBlue: rgb(1, 0, 51);
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    transition: 0.1s;
     div {
       width: 100%;
       height: 40%;
@@ -142,5 +151,8 @@ $textDarkBlue: rgb(1, 0, 51);
       text-align: center;
       font-family: "Anek Devanagari", sans-serif;
     }
+  }
+  .uzbCon:hover{
+    box-shadow: 10px 10px 20px $shadowBlue, -10px -10px 20px $shadowBlue;
   }
 }

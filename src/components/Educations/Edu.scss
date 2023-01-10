@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=JetBrains+Mono:wght@500&family=Poppins:wght@300;500&display=swap");
+$textBlue: rgb(0, 119, 255);
+$shadowBlue: rgba(0, 119, 255, 0.534);
+$bgGray: rgba(0, 0, 0, 0.096);
+$cardW: 340px;
+$cardH: 70vh;
+$cardMargin: 10vh 0;
+$textDarkBlue: rgb(1, 0, 51);
+
+.eduCon {
+  width: 100%;
+  margin-top: 5vh;
+  .titleCon {
+    width: 100%;
+    height: 10vh;
+    background-color: $bgGray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: rgb(0, 119, 255);
+      font-size: 40px;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+  .pdpCon {
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 10px;
+    border-radius: 10px;
+    .pdpText {
+      width: 728px;
+      height: 51vh;
+      background-color: $bgGray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px 0px 0px 10px;
+      border-top: 2px solid $textBlue;
+      border-left: 2px solid $textBlue;
+      border-bottom: 2px solid $textBlue;
+      transition: 0.5s;
+      h2 {
+        color: rgb(38, 168, 5);
+        font-size: 35px;
+        font-family: "Poppins", sans-serif;
+      }
+      p {
+        width: 80%;
+        color: rgb(1, 0, 51);
+        font-size: 20px;
+        text-align: center;
+        font-family: "Anek Devanagari", sans-serif;
+        transition: 0.5s;
+        margin-top: 20px;
+      }
+      p:hover {
+        color: rgb(4, 2, 124);
+      }
+    }
+    .pdpText:hover {
+      box-shadow: 5px 0px 10px rgb(78, 78, 78);
+    }
+    .pdpPhoto {
+      width: 486px;
+      height: 51vh;
+      background-color: $bgGray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0px 10px 10px 0px;
+      border-top: 2px solid $textBlue;
+      border-left: 2px solid rgb(82, 81, 81);
+      border-bottom: 2px solid $textBlue;
+      border-right: 2px solid $textBlue;
+      transition: 0.5s;
+      img {
+        width: 90%;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      img:hover {
+        width: 95%;
+      }
+    }
+    .pdpPhoto:hover {
+      box-shadow: -5px 0px 10px rgb(78, 78, 78);
+    }
+  }
+  .pdpCerCon {
+    margin: 0 auto;
+    width: 89%;
+    background-color: $bgGray;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid $textBlue;
+    border-right: 2px solid $textBlue;
+    border-bottom: 2px solid $textBlue;
+    border-radius: 0 0 10px 10px;
+    .certificateTitle {
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      align-items: flex-end;
+      h3 {
+        color: rgb(29, 131, 4);
+        font-family: "Poppins", sans-serif;
+        margin-left: 2vw;
+      }
+    }
+    .certificateCon {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      div {
+        height: 55vh;
+        width: 500px;
+        margin: 3vh 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        img {
+          border: 2px solid $textBlue;
+          width: 90%;
+          border-radius: 10px;
+          transition: 0.5s;
+        }
+        img:hover {
+          width: 95%;
+        }
+      }
+    }
+  }
+
+  // cambridge L.C styles
+  .cemCon {
+    margin: 0 auto;
+    margin-top: 20vh;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 10px;
+    border-radius: 10px;
+    .cemText {
+      width: 728px;
+      height: 51vh;
+      background-color: $bgGray;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px 0px 0px 10px;
+      border-top: 2px solid $textBlue;
+      border-left: 2px solid $textBlue;
+      border-bottom: 2px solid $textBlue;
+      transition: 0.5s;
+      h2 {
+        color: rgb(1, 174, 226);
+        font-size: 35px;
+        font-family: "Poppins", sans-serif;
+      }
+      p {
+        width: 80%;
+        color: rgb(1, 0, 51);
+        font-size: 20px;
+        text-align: center;
+        font-family: "Anek Devanagari", sans-serif;
+        transition: 0.5s;
+        margin-top: 20px;
+      }
+      p:hover {
+        color: rgb(4, 2, 124);
+      }
+    }
+    .cemText:hover {
+      box-shadow: 5px 0px 10px rgb(78, 78, 78);
+    }
+    .cemPhoto {
+      width: 486px;
+      height: 51vh;
+      background-color: $bgGray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0px 10px 10px 0px;
+      border-top: 2px solid $textBlue;
+      border-left: 2px solid rgb(82, 81, 81);
+      border-bottom: 2px solid $textBlue;
+      border-right: 2px solid $textBlue;
+      transition: 0.5s;
+      img {
+        width: 90%;
+        border-radius: 10px;
+        transition: 0.5s;
+      }
+      img:hover {
+        width: 95%;
+      }
+    }
+    .cemPhoto:hover {
+      box-shadow: -5px 0px 10px rgb(78, 78, 78);
+    }
+  }
+}
