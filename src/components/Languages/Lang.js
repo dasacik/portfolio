@@ -36,7 +36,7 @@ function Lang() {
           <h4>Level: B1 – Intermediate</h4>
           <p>
             Nowadays i'm learning English, Because i must to get IELTS to
-            University, to my future job too and to myself.
+            University, to my future job and for myself too.
           </p>
         </div>
         <div className="uzbCon" data-aos="fade-up">
@@ -46,9 +46,8 @@ function Lang() {
           <h2>Uzbek</h2>
           <h4>Level: Native speaker</h4>
           <p>
-            I speak Uzbek since childhood, Uzbek is my first language. In the
-            future, I want to learn Japanese, Korean, Turkish and Arabic.
-            languages
+            I speak Uzbek Uzbek. Because i was born in Uzbekistan. My parents
+            are uzbeks. My first words were been Uzbek.
           </p>
         </div>
       </div>

@@ -17,7 +17,7 @@ function Edu() {
       <div className="titleCon">
         <h2>Educations</h2>
       </div>
-      <div className="pdpCon" data-aos="zoom-in-up">
+      <div className="pdpCon" >
         <div className="pdpText">
           <h2>PDP Academy</h2>
           <p>
@@ -53,7 +53,7 @@ function Edu() {
             I have been studying here since August 2022. I'm learning here
             because i want be able to speak in English and i want get IELTS to
             go to abroad end study in best Universities to be better and better.
-            At the moment i'm studying in intermediate level. I'm going to
+            Nowadays i'm studying in intermediate level. I'm going to
             finish this courses at september or october.
           </p>
         </div>

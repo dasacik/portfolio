@@ -21,13 +21,13 @@ function Project() {
         <div className="textCon" data-aos="fade-right">
           <h2>KFC.uz</h2>
           <p>
-            I finished this project last summer. This project took about 1.5
+            I finished this project end of summer in 2022. This project took about 1.5
             months. This site has been designed with languages like: React js,
             Sass, Html. There I didn’t use API, because I haven’t familiar
             people who works in the back-end sphere, because of this, I
             developed 60 products for myself in ArrayObjects which I submitted
             to Redux In this project,<br/> I learned how to make a Scroll Button in
-            React js and create a basket <br/> But unfortunately I didn't get the link
+            React js and create a basket of products<br/> But unfortunately I didn't get the web host
             from netify because it can't somehow open my file
           </p>
         </div>

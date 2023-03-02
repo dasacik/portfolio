@@ -1,16 +1,269 @@
-$bgDarkBlue : #efefef;
-$bgLightGreen : #efefef;
+$bg: #e6e4e4;
+$bgLightGreen: #efefef;
+$borderWhite: white;
 
-body{
-    margin: auto;
-    background: linear-gradient(90deg , $bgDarkBlue , $bgLightGreen, $bgDarkBlue);
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari&family=Dancing+Script&family=JetBrains+Mono:wght@500&family=Poppins:wght@300;500&display=swap");
+$textBlue: rgb(0, 174, 255);
+$shadowBlue: rgba(0, 119, 255, 0.534);
+$bgGray: rgb(33, 37, 41);
+$cardW: 340px;
+$cardH: 70vh;
+$cardMargin: 10vh 0;
+$textDarkBlue: rgb(1, 0, 51);
+
+body {
+  margin: auto;
+  background: $bg;
 }
-.navCon{
-    width: 100%;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 2px 2px 10px rgb(110, 110, 110);
-    z-index: 99;
+.navCon {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 2px 2px 10px rgb(110, 110, 110);
+  z-index: 99;
+}
+.futterBox {
+  margin-top: 15vh;
+  width: 100%;
+  background-color: $bgGray;
+  border-top: 2px solid $textBlue;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  .firstBox {
+    width: 400px;
+    height: 100%;
+    height: 30vh;
+    margin: 1vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .instaBox {
+      border-top: 2px solid white;
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+      width: 70%;
+      height: 26%;
+      border-radius: 30px;
+      display: flex;
+      background-color: rgb(255, 0, 106);
+      align-items: center;
+      transition: 0.3s;
+      a {
+        text-decoration: none;
+        margin: auto;
+        color: white;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .instaLogo {
+        width: 19%;
+        height: 100%;
+        background-color: rgb(255, 0, 106);
+        border-radius: 50%;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 0px 5px black;
+        transition: 0.4s;
+        svg {
+          color: white;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    .instaBox:hover {
+      background-color: white;
+      border: 2px solid rgb(255, 0, 106);
+      a {
+        color: rgb(255, 0, 106);
+      }
+    }
+    .linkedinBox {
+      border-top: 2px solid white;
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+      width: 70%;
+      height: 26%;
+      border-radius: 30px;
+      display: flex;
+      background-color: rgb(0, 60, 255);
+      align-items: center;
+      transition: 0.3s;
+      a {
+        text-decoration: none;
+        margin: auto;
+        color: white;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .linkedinLogo {
+        width: 19%;
+        height: 100%;
+        background-color: rgb(0, 60, 255);
+        border-radius: 50%;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 0px 5px black;
+        transition: 0.4s;
+        svg {
+          color: white;
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+    .linkedinBox:hover {
+      background-color: white;
+      border: 2px solid rgb(0, 60, 255);
+      a {
+        color: rgb(0, 60, 255);
+      }
+    }
+  }
+  .secondBox {
+    width: 400px;
+    height: 100%;
+    height: 30vh;
+    margin: 1vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      color: white;
+      font-family: "Dancing Script", cursive;
+      font-size: 48px;
+      margin-bottom: 0;
+    }
+    h3 {
+      color: rgb(214, 213, 213);
+      font-family: "Dancing Script", cursive;
+      font-size: 21px;
+      margin-top: 0;
+    }
+    a {
+      font-family: "Anek Devanagari", sans-serif;
+      color: $textBlue;
+      font-size: 21px;
+      margin-top: 5vh;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    a:hover{
+      color: rgb(98, 202, 250);;
+    }
+  }
+  .thirdBox {
+    width: 400px;
+    height: 100%;
+    height: 30vh;
+    margin: 1vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .telegramBox {
+      border-top: 2px solid white;
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+      width: 70%;
+      height: 26%;
+      border-radius: 30px;
+      display: flex;
+      background-color: rgb(1, 48, 150);
+      align-items: center;
+      transition: 0.3s;
+      a {
+        text-decoration: none;
+        margin: auto;
+        color: white;
+        font-size: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .telegramLogo {
+        width: 19%;
+        height: 100%;
+        background-color: rgb(1, 48, 150);
+        border-radius: 50%;
+        border: 2px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 0px 5px black;
+        transition: 0.4s;
+        svg {
+          color: white;
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+    .telegramBox:hover {
+      background-color: white;
+      border: 2px solid rgb(1, 48, 150);
+      a {
+        color: rgb(1, 48, 150);
+      }
+    }
+      .gitHubBox {
+        border-top: 2px solid white;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        width: 70%;
+        height: 26%;
+        border-radius: 30px;
+        display: flex;
+        background-color: rgb(32, 32, 32);
+        align-items: center;
+        transition: 0.3s;
+        a {
+          text-decoration: none;
+          margin: auto;
+          color: white;
+          font-size: 20px;
+          font-family: "Poppins", sans-serif;
+        }
+  
+        .gitHubLogo {
+          width: 19%;
+          height: 100%;
+          background-color: rgb(32, 32, 32);
+          border-radius: 50%;
+          border: 2px solid white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 2px 0px 5px black;
+          transition: 0.4s;
+          svg {
+            color: white;
+            width: 26px;
+            height: 26px;
+          }
+        }
+      }
+      .gitHubBox:hover {
+        background-color: white;
+        border: 2px solid rgb(32, 32, 32);
+        a {
+          color: rgb(32, 32, 32);
+        }
+      }
+    
+  }
 }

@@ -13,7 +13,7 @@ function Me() {
       <div className="textMe" data-aos="fade-right">
         <h2>About me</h2>
         <p>
-          I love creating cool products which make people's lives better. I
+          I enjoy creating cool products which make people's lives better. I
           study at school, I learned programming at PDP Academy. I have
           experience working in a team. I grew up in Tashkent, i love my job and
           i didn't give up when i developed projects. My dream is be a very
