@@ -18,8 +18,8 @@ function Exp() {
         <h2>Experience</h2>
         <p>
           I don't have work experience yet, but I do have experience working in
-          a team. I have skills with command control, I do my job to the end, I
-          work wholeheartedly and I can find a common language with people.
+          a team. I have skills with command control, finishing my job to the end, work wholeheartedly
+           and I am able to find a common language with people.
         </p>
       </div>
     </div>

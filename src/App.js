@@ -13,8 +13,20 @@ import Edu from "./components/Educations/Edu";
 function App() {
   const Home = useRef(null);
   const about = useRef(null);
+  const skill = useRef(null);
+  const projects = useRef(null);
+  const experience = useRef(null);
+  const languages = useRef(null);
+  const educations = useRef(null);
+
   const executeScroll = () => Home.current.scrollIntoView();
   const aboutScroll = () => about.current.scrollIntoView();
+  const skillScroll = () => skill.current.scrollIntoView();
+  const projectsScroll = () => projects.current.scrollIntoView();
+  const experienceScroll = () => experience.current.scrollIntoView();
+  const languagesScroll = () =>languages.current.scrollIntoView();
+  const educationsScroll = () =>educations.current.scrollIntoView();
+
   return (
     <>
       <div className="navCon">
@@ -25,13 +37,13 @@ function App() {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link onClick={aboutScroll}>About</Nav.Link>
-                <Nav.Link href="#pricing">Skills</Nav.Link>
-                <Nav.Link href="#pricing">Projects</Nav.Link>
-                <Nav.Link href="#pricing">Experience</Nav.Link>
+                <Nav.Link  onClick={skillScroll}>Skills</Nav.Link>
+                <Nav.Link  onClick={projectsScroll}>Projects</Nav.Link>
+                <Nav.Link  onClick={experienceScroll}>Experience</Nav.Link>
               </Nav>
               <Nav>
-                <Nav.Link href="#deets">Languages </Nav.Link>
-                <Nav.Link eventKey={2} href="#memes">
+                <Nav.Link onClick={languagesScroll}>Languages </Nav.Link>
+                <Nav.Link onClick={educationsScroll}>
                   Educations
                 </Nav.Link>
               </Nav>
@@ -45,19 +57,19 @@ function App() {
       <div ref={about}>
         <Me />
       </div>
-      <div>
+      <div ref={skill}>
         <MySkills />
       </div>
-      <div>
+      <div ref={projects}>
         <Project />
       </div>
-      <div>
+      <div ref={experience}>
         <Exp />
       </div>
-      <div>
+      <div ref={languages}>
         <Lang />
       </div>
-      <div>
+      <div ref={educations}>
         <Edu />
       </div>
       <div className="futterBox">

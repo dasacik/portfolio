@@ -24,7 +24,7 @@ function Edu() {
             I have been studying here since October 2021. I learned how to code
             here, how to use a computer, how to solve problems with code and I
             studied different programming languages. This learning center helped
-            me achieve my goal and now I want to study back-end here to become a
+            me achieve my goal and now I am studying Java Back-End sphere there to become a
             full stack developer
           </p>
         </div>
@@ -32,7 +32,7 @@ function Edu() {
           <img src={PdpLogo} alt="" />
         </div>
       </div>
-      <div className="pdpCerCon" data-aos="zoom-in-up">
+      <div className="pdpCerCon" >
         <div className="certificateTitle">
           <h3>Certificates</h3>
         </div>
@@ -46,15 +46,15 @@ function Edu() {
         </div>
       </div>
 
-      <div className="cemCon" data-aos="zoom-out">
+      <div className="cemCon" >
         <div className="cemText">
           <h2>Cambridge L.C.</h2>
           <p>
             I have been studying here since August 2022. I'm learning here
             because i want be able to speak in English and i want get IELTS to
             go to abroad end study in best Universities to be better and better.
-            Nowadays i'm studying in intermediate level. I'm going to
-            finish this courses at september or october.
+            Nowadays i'm studying in Upper-Intermediate level. I'm going to
+            finish this courses at september or october 2023.
           </p>
         </div>
         <div className="cemPhoto">

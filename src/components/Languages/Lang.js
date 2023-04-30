@@ -25,7 +25,7 @@ function Lang() {
           <h4>Level: С1 – Advanced</h4>
           <p>
             I speak Russian very fluently, because I have studied in the Russian
-            class since when i came to first grade
+            class since when i came to first grade at school.
           </p>
         </div>
         <div className="engCon" data-aos="fade-up">
@@ -33,7 +33,7 @@ function Lang() {
             <img src={EngPhoto} alt="US and UK Flags" />
           </div>
           <h2>English</h2>
-          <h4>Level: B1 – Intermediate</h4>
+          <h4>Level: B2 – Upper-Intermediate</h4>
           <p>
             Nowadays i'm learning English, Because i must to get IELTS to
             University, to my future job and for myself too.
